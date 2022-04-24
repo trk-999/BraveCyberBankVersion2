@@ -1,0 +1,90 @@
+				<html>
+				
+				<head>
+					<link rel="icon" type="image/x-icon" href="favicon.ico">
+					<body style="background-color:#800020;">
+					</body>
+				
+				<title>Bravebank / Admin Registration</title>
+				<script>
+
+				function validate(){
+				//The Javascript here to get the first name and last name for the admin form.
+				var firstName = document.getElementById('fname').value;
+				var lastName = document.getElementById('lname').value;
+				//The variable is used to filter for only alphabetical characters. With the if statements testing both first and last name. And 
+				//the else statements there in case if somebody enters a number
+				var alphabetPattern = /^[a-zA-Z]+$/;
+
+				if(firstName.match(alphabetPattern)){
+				
+				   if(lastName.match(alphabetPattern)){
+				   
+					   return true;
+				   }
+				   else
+				   {
+					   alert("Enter letters of the alphebet only");
+					   document.getElementById('lname').focus();
+				   return false;
+				   }
+				}
+				else{
+				   alert("Enter letters of the alphebet only");
+				   document.getElementById('fname').focus();
+				   return false;
+				  
+				}
+
+				}
+
+				</script>
+				</head>
+
+					<body>
+
+					<form action= "register.php" onsubmit="return validate()" method="post"> <!-- onsubmit is here for code execution to validate it on the register.php-->
+					<table>
+					
+					<h1>Registration Page</h1>
+					
+					<tr>
+					<td>First Name:</td>
+					<td><input type='text' name='fname'  required></td>
+					</tr>
+					
+					<tr>
+					<td>Last Name:</td>
+					<td><input type='text' name='lname'  required></td>
+					</tr>
+					
+					<tr>
+					<td>eMail:</td>
+					<td><input type='text' name='email' required></td>
+					</tr>
+					
+					<tr> <td> User name: </td>
+					<td> <input name= "uName" type="text" required> </td> </tr>
+					
+					<tr>
+					<td>Select a Password:</td>
+					<td><input name="pw"type='password'  required></td>
+					</tr>
+					
+					<tr>
+					<td><input type="submit" name="save" value="Submit"></td>
+					<td><input type="reset" value='Reset' required></td>
+					
+					</tr>
+					
+					</table>
+					
+					</form>
+
+					<p> Click the following link to your homepage: <a href="home.php">here</a>  </p>
+					<p> Click to admin-login page: <a href="login.html"> Clickhere </a> </p>
+					
+					</body>
+					
+					</html>
+					

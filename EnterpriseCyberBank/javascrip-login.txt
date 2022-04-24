@@ -1,0 +1,5 @@
+The password information for javascript login is in this text file
+
+Password: 
+
+PassWordCannotbeHaCkedsinceitis==password

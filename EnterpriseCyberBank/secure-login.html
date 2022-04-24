@@ -1,0 +1,25 @@
+<!--This login process uses javascript to test out cybersecurity without having to
+use PhP and MySQL-->
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+<title>Additional Security</title>
+<script src="secure-login.js"></script>
+<!--- The disable.js will at times being commented out to test with and without inspect element allowed-->
+<!---  <script src="disable.js"></script> -->
+</head>
+<body>
+    <h1>First, we have provided you with username and password in order to now reach the login and register page that had a security breach. </h1>
+    
+    <form name="secure-form" method="POST">
+        <label for="userName">Username:</label><br>
+        <input type="text" placeholder="Enter your username" name="userName"> <br>
+        <br> <input type="password" name="passWord" placeholder="Enter your password"> <br>
+        <br> <input type="button" name="login" id="loginButton" value="Login" onclick="braveFunction()">    
+
+    </form>
+
+</body>
+</html>

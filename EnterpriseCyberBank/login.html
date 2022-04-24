@@ -1,0 +1,33 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="UTF-8">
+
+		<title> Login Page </title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		</head>
+
+	<body style="background-color: gray;">
+		<!-- 
+			The form with checkPW.php as a post 
+			will ensure that the information inputed
+			is correct and will provide the link page
+			to the admin home page.
+		-->
+		<form action ="checkPW.php" method="post">
+		 <table>
+		<tr> <td> User name: </td>
+		 <td> <input name= "uName" type="text" required> </td> </tr>
+		 <tr> <td> Password : </td>
+		 <td> <input name="pw" type="password" required> </td> </tr>
+		<tr> <td> <input type = "submit"> </td>
+		 <td> <input type="reset"> </td> </tr>
+		</table>
+		 </form>
+		 <hr/>
+		 <p> Welcome, if you are new, you have to <a href="register.html"> register </a> here for admin role</p>
+		 <p> And if you want to go back to the homepage <a href="home.php"> click here</a></p>
+		</body>
+	</html>
+		
+		
